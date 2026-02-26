@@ -36,16 +36,16 @@ The paper uses 10 diverse UE4 environments from Fab to simulate real-world sidew
 |---|-------------|-------------|
 | 1 | City Park | Mixed terrain with grass, gravel, pavement, trees, and paths |
 | 2 | Downtown West | Streets, curbs, vehicles, traffic lights, and benches |
-| 3 | Suburban | Residential sidewalks with driveways and fences |
-| 4 | Urban District | Dense urban area with crosswalks and pedestrian zones |
-| 5 | Campus | University-style walkways and plazas |
-| 6 | Residential | Quiet neighborhood streets and sidewalks |
-| 7 | Industrial | Loading docks, warehouses, and service roads |
-| 8 | Town Square | Public spaces with varied paving patterns |
-| 9 | Waterfront | Boardwalks and coastal paths |
-| 10 | Rural | Country roads and informal paths |
+| 3 | Suburbs | Residential sidewalks with driveways and fences |
+| 4 | NYC East Village | Dense urban area with crosswalks and pedestrian zones |
+| 5 | Modular Building | Urban environment with varied paving patterns |
+| 6 | Suburb Neighborhood | Quiet neighborhood streets and sidewalks |
+| 7 | Night City | City at night with vehicles, crosswalks, and pedestrian zones |
+| 8 | Tokyo Street | Narrow streets and pedestrian zones |
+| 9 | Japanese Street | Sidewalks, crosswalks, pedestrian zones |
+| 10 | Hong Kong Street | Dense buildings with crosswalks |
 
-Each scene is rendered under multiple lighting/weather conditions (sunny, overcast, rainy, snowy, daytime, sunset, night) using UE4's Directional Lights.
+Each scene is rendered under multiple lighting/weather conditions (sunny, overcast, rainy, snowy, daytime, sunset, night) using UE4's Directional Lights and AirSim's Weather APIs.
 
 ## Usage
 
