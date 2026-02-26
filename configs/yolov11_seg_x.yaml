@@ -1,0 +1,45 @@
+# YOLOv11-Seg-X Configuration
+# Paper: GuideTWSI (ICRA 2026)
+# Fine-tuned YOLOv11-seg Extra-large variant for TWSI segmentation
+
+model:
+  variant: yolov11x-seg
+  pretrained: true
+  task: segment
+
+data:
+  dataset_yaml: null  # Set to path of your data.yaml
+  num_classes: 1
+  class_names: ["tactile_paving"]
+
+training:
+  epochs: 100
+  batch_size: 16
+  image_size: 640
+  optimizer: SGD
+  learning_rate: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+
+augmentation:
+  mosaic: 1.0
+  flip_lr: 0.5
+  flip_ud: 0.0
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  shear: 0.0
+  perspective: 0.0
+  mixup: 0.0
+  copy_paste: 0.0
+
+evaluation:
+  iou_thresholds: [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
+  conf_threshold: 0.25
+  metrics: ["precision", "recall", "mAP50-95", "mIoU"]

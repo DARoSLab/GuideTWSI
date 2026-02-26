@@ -1,0 +1,40 @@
+# SAM2.1 + UNet Configuration
+# Paper: GuideTWSI (ICRA 2026)
+# Frozen SAM2.1 backbone with custom UNet decoder for TWSI segmentation
+
+model:
+  backbone: sam2.1_hiera_b+
+  backbone_frozen: true
+  decoder: unet
+  task: semantic_segmentation
+
+  # UNet decoder architecture
+  unet_decoder:
+    encoder_channels: 256  # Input from SAM2.1 encoder features (64x64)
+    stages: 4
+    stage_channels: [64, 128, 256, 512, 1024]  # Progressive upsampling
+    skip_connections: true
+    output_channels: 1  # Binary segmentation
+
+data:
+  format: sam2_rle  # JSON files with RLE segmentation annotations
+  num_classes: 1
+  class_names: ["tactile_paving"]
+
+training:
+  epochs: 100
+  batch_size: 4
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.01
+
+  # SAM2 specific
+  sam2_checkpoint: "sam2.1_hiera_base_plus.pt"
+  sam2_config: "configs/sam2.1/sam2.1_hiera_b+.yaml"
+
+  # Precision
+  dtype: bfloat16
+  tf32: true  # Enable on Ampere+ GPUs
+
+evaluation:
+  metrics: ["precision", "recall", "mAP50-95", "mIoU"]

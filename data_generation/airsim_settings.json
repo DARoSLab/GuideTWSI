@@ -1,0 +1,45 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 1920,
+        "Height": 1080,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "DetectionSettings": {
+          "Enabled": true
+        }
+      },
+      {
+        "ImageType": 5,
+        "Width": 1920,
+        "Height": 1080,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "DetectionSettings": {
+          "Enabled": true
+        }
+      }
+    ]
+  },
+  "Vehicles": {
+    "Drone1": {
+      "VehicleType": "SimpleFlight",
+      "EnableCollisionPassthrogh": true,
+      "EnableCollisions": false
+    }
+  },
+  "SegmentationSettings": {
+    "InitMethod": "None",
+    "MeshNamingMethod": "",
+    "OverrideExisting": true
+    }
+}

@@ -1,0 +1,56 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+.env/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data directories
+data/
+*.zip
+*.tar.gz
+*.tar
+*.rar
+
+# Model weights
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+
+# Logs
+runs/
+wandb/
+logs/
+tensorboard/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Misc
+*.bak
+*.tmp

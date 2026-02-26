@@ -1,0 +1,39 @@
+# Mask2Former Configuration
+# Paper: GuideTWSI (ICRA 2026)
+# Mask2Former trained using standard Detectron2 configuration
+
+model:
+  architecture: mask2former
+  backbone: swin_base
+  pretrained: true
+  task: instance_segmentation
+
+data:
+  format: coco
+  num_classes: 1
+  class_names: ["tactile_paving"]
+
+training:
+  max_iterations: 355000
+  batch_size: 2
+  image_size: 1024  # Large-scale jittering augmentation crops
+  optimizer: AdamW
+  base_learning_rate: 0.0001
+  weight_decay: 0.05
+  amp_enabled: true  # Automatic mixed precision
+
+  # Learning rate schedule
+  lr_scheduler: WarmupMultiStepLR
+  warmup_iterations: 1000
+
+augmentation:
+  large_scale_jitter: true
+  crop_size: [1024, 1024]
+  random_flip: true
+
+# Detectron2-specific config reference
+detectron2:
+  config_file: "configs/coco/instance-segmentation/swin/maskformer2_swin_base_IN21k_384_bs16_50ep.yaml"
+
+evaluation:
+  metrics: ["precision", "recall", "mAP50-95", "mIoU"]

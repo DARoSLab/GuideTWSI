@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+title: "GuideTWSI: A Diverse Tactile Walking Surface Indicator Dataset from Synthetic and Real-World Images for Blind and Low-Vision Navigation"
+message: "If you use this software or dataset, please cite it as below."
+type: software
+authors:
+  - family-names: Hwang
+    given-names: Hochul
+    affiliation: University of Massachusetts Amherst
+  - family-names: Yang
+    given-names: Soowan
+    affiliation: Daegu Gyeongbuk Institute of Science and Technology
+  - family-names: Nguyen
+    given-names: Anh N. H.
+    affiliation: University of Massachusetts Amherst
+  - family-names: Goel
+    given-names: Parth
+    affiliation: University of Massachusetts Amherst
+  - family-names: Adhikari
+    given-names: Krisha
+    affiliation: University of Massachusetts Amherst
+  - family-names: Lee
+    given-names: Sunghoon I.
+    affiliation: University of Massachusetts Amherst
+  - family-names: Biswas
+    given-names: Joydeep
+    affiliation: The University of Texas at Austin
+  - family-names: Giudice
+    given-names: Nicholas A.
+    affiliation: University of Maine
+  - family-names: Kim
+    given-names: Donghyun
+    affiliation: University of Massachusetts Amherst
+repository-code: "https://github.com/guidedogrobot-tactile/GuideTWSI"
+url: "https://guidedogrobot-tactile.github.io/"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "GuideTWSI: A Diverse Tactile Walking Surface Indicator Dataset from Synthetic and Real-World Images for Blind and Low-Vision Navigation"
+  authors:
+    - family-names: Hwang
+      given-names: Hochul
+    - family-names: Yang
+      given-names: Soowan
+    - family-names: Nguyen
+      given-names: Anh N. H.
+    - family-names: Goel
+      given-names: Parth
+    - family-names: Adhikari
+      given-names: Krisha
+    - family-names: Lee
+      given-names: Sunghoon I.
+    - family-names: Biswas
+      given-names: Joydeep
+    - family-names: Giudice
+      given-names: Nicholas A.
+    - family-names: Kim
+      given-names: Donghyun
+  collection-title: "IEEE International Conference on Robotics and Automation (ICRA)"
+  year: 2026

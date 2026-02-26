@@ -1,0 +1,44 @@
+# DINOv3 + RegCls (Patchwise Regression Classifier) Configuration
+# Paper: GuideTWSI (ICRA 2026)
+# Frozen DINOv3 backbone with logistic regression classifier for TWSI segmentation
+
+model:
+  backbone: dinov3_vits16
+  backbone_frozen: true
+  classifier: logistic_regression
+  task: foreground_segmentation
+
+  # DINOv3 model details
+  dinov3:
+    variant: dinov3_vits16
+    num_layers: 12
+    patch_size: 16
+
+data:
+  format: image_mask  # images/*.jpg + masks/*.png
+  num_classes: 1
+  class_names: ["tactile_paving"]
+
+training:
+  image_size: 768
+  patch_size: 16
+
+  # Logistic Regression parameters
+  classifier_C: 0.1
+  max_iterations: 100000
+  random_state: 0
+
+  # Label quantization thresholds
+  negative_threshold: 0.01  # Patches below this are labeled background
+  positive_threshold: 0.99  # Patches above this are labeled foreground
+
+  # Normalization
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+
+inference:
+  confidence_threshold: 0.5
+  median_filter_kernel: 3
+
+evaluation:
+  metrics: ["precision", "recall", "mAP50-95", "mIoU"]
