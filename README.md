@@ -18,7 +18,9 @@
 </div>
 
 <p align="center">
-  <img src="assets/teaser.png" width="90%">
+  <video src="assets/teaser.mp4" width="90%" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 ## Overview
