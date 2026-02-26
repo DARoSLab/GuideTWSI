@@ -85,14 +85,14 @@ Download environment assets from [Fab](https://www.fab.com/) (formerly UE Market
 |-------------|-------------|--------------|
 | City Park | Mixed urban park | Grass, gravel, pavement, trees, paths |
 | Downtown West | Dense city center | Streets, curbs, vehicles, traffic lights |
-| Suburban | Residential area | Sidewalks, driveways, fences |
-| Urban District | Pedestrian zone | Crosswalks, plazas, storefronts |
-| Campus | University setting | Walkways, plazas, open spaces |
-| Residential | Quiet neighborhood | Sidewalks, front yards |
-| Industrial | Commercial area | Loading docks, warehouses |
-| Town Square | Public gathering space | Varied paving, fountains |
-| Waterfront | Coastal setting | Boardwalks, promenades |
-| Rural | Country setting | Informal paths, rural roads |
+| Suburbs | Residential area | Sidewalks, driveways, fences |
+| NYC East Village | Pedestrian zone | Crosswalks, plazas, storefronts |
+| Modular Building | Urban environment | Walkways, plazas, open spaces |
+| Suburb Neighborhood | Quiet neighborhood | Sidewalks, front yards |
+| Night City | City at night | Vehicles, traffic lights, crosswalks, sidewalks |
+| Tokyo Street | Urban street | Narrow roads, crosswalks, sidewalks |
+| Japanese Street | Residential street | Narrow roads, driveways |
+| Hong Kong Street | Dense city street | Streets, plazas, storefronts, crosswalks |
 
 ### Step 5: Install Custom Truncated Dome Assets
 
