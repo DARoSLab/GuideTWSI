@@ -18,7 +18,7 @@
 </div>
 
 <p align="center">
-  <video src="assets/teaser.mp4" width="90%" autoplay loop muted playsinline>
+  <video src="https://github.com/user-attachments/assets/aa48c885-52f4-490c-af97-0c005d4e5144" width="90%" autoplay loop muted playsinline>
     Your browser does not support the video tag.
   </video>
 </p>
