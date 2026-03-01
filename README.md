@@ -53,7 +53,7 @@ For detailed dataset information, see [`docs/DATASET.md`](docs/DATASET.md).
 ## Installation
 
 ```bash
-git clone https://github.com/guidedogrobot-tactile/GuideTWSI.git
+git clone https://github.com/DARoSLab/GuideTWSI
 cd GuideTWSI
 pip install -r requirements.txt
 ```
