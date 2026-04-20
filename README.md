@@ -8,7 +8,7 @@
 
 <sup>1</sup>University of Massachusetts Amherst &nbsp; <sup>2</sup>DGIST &nbsp; <sup>3</sup>UT Austin &nbsp; <sup>4</sup>University of Maine
 
-[[Paper]](https://arxiv.org/) &nbsp; [[Project Page]](https://guidedogrobot-tactile.github.io/) &nbsp; [[Dataset (HuggingFace)]](https://huggingface.co/datasets/guidedogrobot-tactile/GuideTWSI) &nbsp; [[Pretrained Weights (HuggingFace)]](https://huggingface.co/guidedogrobot-tactile/GuideTWSI)
+[[Paper]](https://arxiv.org/abs/2603.07060) &nbsp; [[Project Page]](https://guidedogrobot-tactile.github.io/) &nbsp; [[Dataset (Kaggle)]](https://www.kaggle.com/datasets/guidedogrobot/guidetwsi) &nbsp; [[Pretrained Weights (YOLO)]](./model_weights)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
@@ -86,6 +86,11 @@ We provide training notebooks for all models evaluated in the paper:
 | [`DINOv3_EoMT.ipynb`](notebooks/DINOv3_EoMT.ipynb) | DINOv3+EoMT | Encoder-only Mask Transformer via lightly-train |
 
 Model configs with exact paper hyperparameters are in [`configs/`](configs/).
+
+## Model Weights
+| Model | Weights | Description |
+|-------|---------|-------------|
+| YOLOv11-Seg-N | [`yolov11n.pt`](./model_weights/yolov11n.pt) | YOLOv11-Seg-N model trained on the GuideTWSI dataset |
 
 ## Evaluation
 

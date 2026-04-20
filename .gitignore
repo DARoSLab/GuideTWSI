@@ -30,9 +30,6 @@ data/
 *.rar
 
 # Model weights
-checkpoints/
-*.pt
-*.pth
 *.onnx
 *.engine
 *.safetensors
